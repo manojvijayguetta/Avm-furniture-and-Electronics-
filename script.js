@@ -19,7 +19,7 @@ if (hero && heroGlow) {
     const rect = hero.getBoundingClientRect();
     heroGlow.style.setProperty('--x', `${e.clientX - rect.left}px`);
     heroGlow.style.setProperty('--y', `${e.clientY - rect.top}px`);
-    if (heroVisual) {
+    if (heroVisual && window.innerWidth > 768) {
       const mx = (e.clientX - window.innerWidth/2) * 0.02;
       const my = (e.clientY - window.innerHeight/2) * 0.02;
       heroVisual.style.transform = `translate(${mx}px, ${my}px)`;

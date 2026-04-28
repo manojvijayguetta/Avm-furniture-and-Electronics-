@@ -573,32 +573,45 @@ footer{
 
 @media (max-width: 768px) {
   section { padding: 4rem 1.5rem; }
-  nav { padding: 0 1.5rem; }
+  nav { padding: 0 1.2rem; }
   .desktop-cta { display: none; }
   .hamburger { display: flex; }
   .nav-links {
     position: fixed;
     top: 0; right: -100%;
-    width: 250px; height: 100vh;
+    width: 280px; height: 100vh;
     background: var(--surface);
     flex-direction: column;
-    padding: 80px 2rem 2rem;
-    transition: right 0.3s ease;
+    padding: 100px 2rem 2rem;
+    transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     border-left: 1px solid var(--border);
+    box-shadow: -10px 0 30px rgba(0,0,0,0.5);
   }
   .nav-links.active { right: 0; }
-  .mobile-cta { display: block; width: 100%; }
+  .mobile-cta { display: block; width: 100%; margin-top: 2rem; }
   
-  .hero h1 { font-size: 2.8rem; }
-  .hero-desc { margin: 0 auto 2rem; }
-  .hero-visual { height: 300px; }
+  .hero { padding-top: 100px; padding-bottom: 3rem; }
+  .hero h1 { font-size: 2.4rem; line-height: 1.1; margin-bottom: 1.2rem; }
+  .hero-desc { font-size: 0.95rem; margin-bottom: 2rem; }
+  .hero-actions { flex-direction: column; gap: 0.75rem; }
+  .hero-actions button { width: 100%; justify-content: center; }
+  
+  .hero-visual { height: 260px; margin-top: 2rem; }
   .hv-main { width: 200px; height: 220px; }
-  .hv-main>img { width: 90px; height: 90px; }
-  .hv-sm1, .hv-sm2 { width: 100px; height: 100px; }
+  .hv-sm1, .hv-sm2 { display: none; } /* Hide smaller cards on mobile for cleaner look */
   
   .cat-grid { grid-template-columns: 1fr; }
   .prod-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
+  
+  .founder-card { flex-direction: column; text-align: center; padding: 2rem 1.5rem; }
+  .founder-img { margin-bottom: 1.2rem; }
+  .founder-info { display: flex; flex-direction: column; align-items: center; }
+  
+  .submit-btn { width: 100%; }
+  
+  .footer { padding: 3rem 1.5rem; gap: 2rem; }
+  .footer-links { gap: 1rem 2rem; justify-content: center; margin-top: 0.5rem; }
   
   .intro-brand { font-size: 1.8rem; }
 }
