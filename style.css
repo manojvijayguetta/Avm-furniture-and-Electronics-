@@ -69,9 +69,11 @@ body {
 }
 
 .intro-logo-img {
-  width: 140px;
+  width: 280px;
   height: auto;
-  margin-bottom: 24px;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
 }
 
 .intro-brand {
@@ -206,8 +208,9 @@ nav {
 }
 
 .nav-logo-img {
-  height: 40px;
+  height: 52px;
   width: auto;
+  border-radius: 8px;
 }
 
 .nav-logo-text {
@@ -1329,8 +1332,9 @@ footer {
 }
 
 .footer-logo-img {
-  height: 36px;
+  height: 60px;
   width: auto;
+  border-radius: 10px;
 }
 
 .footer-logo-text {
