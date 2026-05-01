@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>TV Collection – AVM Enterprises</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+  .collection-hero {
+    padding: 160px 3rem 5rem;
+    text-align: center;
+    background: linear-gradient(to bottom, #0E1118, #080A0F);
+  }
+  .back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s;
+  }
+  .back-btn:hover {
+    transform: translateX(-5px);
+  }
+  .tv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2.5rem;
+    padding: 2rem 3rem 8rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .tv-card {
+    background: var(--surface);
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .tv-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  }
+  .tv-img {
+    height: 240px;
+    background: var(--surface2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .tv-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .tv-info {
+    padding: 2rem;
+  }
+  .tv-brand {
+    font-size: 0.75rem;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+  .tv-name {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .tv-price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+  }
+  .tv-btn {
+    width: 100%;
+    background: var(--accent);
+    color: #0A0800;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .tv-btn:hover {
+    background: var(--accent2);
+    transform: scale(1.02);
+  }
+</style>
+</head>
+<body>
+
+<main style="opacity: 1; animation: none;">
+  <section class="collection-hero">
+    <a href="index.html#products" class="back-btn">← Back to Main Store</a>
+    <div class="section-label" style="justify-content: center;"><div class="section-label-line"></div><span>Premium Series</span></div>
+    <h1 style="font-family: var(--font-display); font-size: 3.5rem; font-weight: 800; margin: 1.5rem 0;">TV Collection</h1>
+    <p style="color: var(--muted); max-width: 600px; margin: 0 auto;">Experience cinematic brilliance with our handpicked range of Smart TVs, OLEDs, and QLED displays.</p>
+  </section>
+
+  <section class="tv-grid">
+    <!-- Samsung -->
+    <!-- Xiaomi FX Pro -->
+    <div class="tv-card">
+      <div class="tv-img"><img src="assets/xiaomi_tv.png" alt="Xiaomi Smart TV FX Pro"/></div>
+      <div class="tv-info">
+        <div class="tv-brand">Xiaomi</div>
+        <div class="tv-name">Smart TV FX Pro QLED 43"</div>
+        <div class="tv-price">₹27,999</div>
+        <button class="tv-btn" onclick="enquireTV('Xiaomi FX Pro 43', '₹27,999')">Enquire Now</button>
+      </div>
+    </div>
+    <!-- Panasonic -->
+    <div class="tv-card">
+      <div class="tv-img"><img src="assets/panasonic_tv.png" alt="Panasonic Smart TV"/></div>
+      <div class="tv-info">
+        <div class="tv-brand">Panasonic</div>
+        <div class="tv-name">TH-43JX650DX Smart 4K</div>
+        <div class="tv-price">₹31,999</div>
+        <button class="tv-btn" onclick="enquireTV('Panasonic TH-43JX650DX', '₹31,999')">Enquire Now</button>
+      </div>
+    </div>
+    <!-- LG -->
+    <div class="tv-card">
+      <div class="tv-img"><img src="assets/lg_tv.png" alt="LG TV"/></div>
+      <div class="tv-info">
+        <div class="tv-brand">LG</div>
+        <div class="tv-name">50" NanoCell Smart</div>
+        <div class="tv-price">₹45,999</div>
+        <button class="tv-btn" onclick="enquireTV('LG 50 NanoCell', '₹45,999')">Enquire Now</button>
+      </div>
+    </div>
+    <!-- OnePlus -->
+    <div class="tv-card">
+      <div class="tv-img"><img src="assets/oneplus_tv.png" alt="OnePlus TV"/></div>
+      <div class="tv-info">
+        <div class="tv-brand">OnePlus</div>
+        <div class="tv-name">43" Y1S Pro 4K</div>
+        <div class="tv-price">₹28,999</div>
+        <button class="tv-btn" onclick="enquireTV('OnePlus 43 Y1S Pro', '₹28,999')">Enquire Now</button>
+      </div>
+    </div>
+  </section>
+
+  <footer style="text-align: center;">
+    <p style="color: var(--muted); font-size: 0.9rem;">AVM Enterprises – Quality you can trust for 18+ years.</p>
+  </footer>
+</main>
+
+<script>
+  function enquireTV(name, price) {
+    const msg = encodeURIComponent(`Hi AVM Enterprises, I am interested in the ${name} (${price}) from your TV Collection. Please provide more details.`);
+    window.open(`https://wa.me/919842298464?text=${msg}`, '_blank');
+  }
+
+  // Simple reveal logic for the new page
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.style.opacity = 1; });
+  });
+  document.querySelectorAll('.tv-card').forEach(el => {
+    el.style.opacity = 0;
+    el.style.transition = 'opacity 0.8s ease';
+    obs.observe(el);
+  });
+</script>
+</body>
+</html>

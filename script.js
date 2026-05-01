@@ -77,54 +77,7 @@ if (ctaBtns.length > 0 && modal && closeBtn) {
 }
 
 const catalogData = [
-  // Living Room Products (11 products)
-  { name: "Royal 3-Seater Sofa", category: "living-room", type: "Furniture", originalPrice: "₹32,000", price: "₹24,999", save: "22% off", badge: "Bestseller", image: "assets/sofa.png" },
-  { name: "55″ 4K Smart TV", category: "living-room", type: "Electronics", originalPrice: "₹58,000", price: "₹42,999", save: "26% off", badge: "New", image: "assets/tv.png" },
-  { name: "L-Shaped Sectional Sofa", category: "living-room", type: "Furniture", originalPrice: "₹48,000", price: "₹39,999", save: "16% off", badge: "Premium", image: "assets/l_shaped_sofa.png" },
-  { name: "Glass Coffee Table", category: "living-room", type: "Furniture", originalPrice: "₹18,000", price: "₹12,499", save: "30% off", badge: "", image: "assets/coffee_table.png" },
-  { name: "Minimalist TV Unit", category: "living-room", type: "Furniture", originalPrice: "₹21,000", price: "₹16,999", save: "19% off", badge: "", image: "assets/tv_unit.png" },
-  { name: "Leather Recliner", category: "living-room", type: "Furniture", originalPrice: "₹28,000", price: "₹22,999", save: "17% off", badge: "Popular", image: "assets/recliner.png" },
-  { name: "Split Air Conditioner", category: "living-room", type: "Electronics", originalPrice: "₹45,000", price: "₹36,999", save: "17% off", badge: "Cooling", image: "assets/ac_unit.png" },
-  { name: "Modern Floor Lamp", category: "living-room", type: "Electronics", originalPrice: "₹5,500", price: "₹3,999", save: "27% off", badge: "", image: "assets/floor_lamp.png" },
-  { name: "5.1 Soundbar Setup", category: "living-room", type: "Electronics", originalPrice: "₹24,000", price: "₹18,999", save: "20% off", badge: "Audio", image: "assets/speaker.png" },
-  { name: "Geometric Woven Rug", category: "living-room", type: "Furniture", originalPrice: "₹8,000", price: "₹5,499", save: "31% off", badge: "", image: "assets/rug.png" },
-  { name: "Floating Wall Shelves", category: "living-room", type: "Furniture", originalPrice: "₹3,500", price: "₹2,499", save: "28% off", badge: "", image: "assets/wall_shelves.png" },
-
-  // Bedroom Products
-  { name: "King Size Bed + Storage", category: "bedroom", type: "Furniture", originalPrice: "₹26,000", price: "₹18,499", save: "29% off", badge: "Popular", image: "assets/bed.png" },
-  { name: "Premium Wooden Wardrobe", category: "bedroom", type: "Furniture", originalPrice: "₹38,000", price: "₹29,999", save: "21% off", badge: "New", image: "assets/wardrobe.png" },
-  { name: "Designer Dressing Table", category: "bedroom", type: "Furniture", originalPrice: "₹18,000", price: "₹13,499", save: "25% off", badge: "", image: "assets/dressing_table.png" },
-  { name: "Geometric Woven Bedroom Rug", category: "bedroom", type: "Decor", originalPrice: "₹6,000", price: "₹4,499", save: "25% off", badge: "", image: "assets/rug.png" },
-  { name: "Standing Corner Lamp", category: "bedroom", type: "Electronics", originalPrice: "₹5,000", price: "₹3,499", save: "30% off", badge: "", image: "assets/floor_lamp.png" },
-  { name: "Split Air Conditioner", category: "bedroom", type: "Electronics", originalPrice: "₹42,000", price: "₹34,999", save: "16% off", badge: "Cooling", image: "assets/ac_unit.png" },
-  { name: "Luxury Reading Chair", category: "bedroom", type: "Furniture", originalPrice: "₹24,000", price: "₹19,999", save: "16% off", badge: "", image: "assets/recliner.png" },
-
-  // Kitchen/Dining
-  { name: "6-Seater Dining Set", category: "dining", type: "Furniture", originalPrice: "₹42,000", price: "₹29,999", save: "28% off", badge: "Bestseller", image: "assets/dining.png" },
-  { name: "Modern Bar Stools", category: "dining", type: "Furniture", originalPrice: "₹6,000", price: "₹4,499", save: "25% off", badge: "", image: "assets/coffee_table.png" },
-  { name: "Serveware Display Cabinet", category: "dining", type: "Furniture", originalPrice: "₹19,000", price: "₹14,999", save: "21% off", badge: "", image: "assets/tv_unit.png" },
-  { name: "Dining Wall Decor Shelves", category: "dining", type: "Furniture", originalPrice: "₹4,500", price: "₹2,999", save: "33% off", badge: "", image: "assets/wall_shelves.png" },
-  { name: "Double Door Fridge", category: "dining", type: "Electronics", originalPrice: "₹36,500", price: "₹28,999", save: "21% off", badge: "Sale", image: "assets/fridge.png" },
-
-  // Televisions
-  { name: "55″ 4K Smart TV", category: "televisions", type: "Electronics", originalPrice: "₹58,000", price: "₹42,999", save: "26% off", badge: "New", image: "assets/tv.png" },
-  { name: "65″ Ultra HD LED TV", category: "televisions", type: "Electronics", originalPrice: "₹75,000", price: "₹59,999", save: "20% off", badge: "Premium", image: "assets/tv.png" },
-  { name: "Media Cabinet & TV Unit", category: "televisions", type: "Furniture", originalPrice: "₹18,000", price: "₹13,999", save: "22% off", badge: "", image: "assets/tv_unit.png" },
-  { name: "Wireless Surround Soundbar", category: "televisions", type: "Electronics", originalPrice: "₹14,000", price: "₹10,500", save: "25% off", badge: "", image: "assets/speaker.png" },
-  { name: "Wall-Mount Entertainment Shelves", category: "televisions", type: "Furniture", originalPrice: "₹3,500", price: "₹2,499", save: "28% off", badge: "", image: "assets/wall_shelves.png" },
-
-  // Appliances
-  { name: "Smart Inverter Refrigerator", category: "appliances", type: "Electronics", originalPrice: "₹36,500", price: "₹28,999", save: "21% off", badge: "Sale", image: "assets/fridge.png" },
-  { name: "Front Load Washing Machine", category: "appliances", type: "Electronics", originalPrice: "₹35,000", price: "₹28,500", save: "18% off", badge: "Bestseller", image: "assets/fridge.png" },
-  { name: "Split Air Conditioner 1.5T", category: "appliances", type: "Electronics", originalPrice: "₹45,000", price: "₹36,999", save: "17% off", badge: "Cooling", image: "assets/ac_unit.png" },
-  { name: "Convection Microwave Oven", category: "appliances", type: "Electronics", originalPrice: "₹16,000", price: "₹12,500", save: "21% off", badge: "", image: "assets/ac_unit.png" },
-  
-  // Audio
-  { name: "5.1 Surround Soundbar", category: "audio", type: "Electronics", originalPrice: "₹24,000", price: "₹18,999", save: "20% off", badge: "Audio", image: "assets/speaker.png" },
-  { name: "Premium Tower Speakers", category: "audio", type: "Electronics", originalPrice: "₹32,000", price: "₹25,999", save: "18% off", badge: "Bestseller", image: "assets/speaker.png" },
-  { name: "Mini Portable Speaker", category: "audio", type: "Electronics", originalPrice: "₹4,000", price: "₹2,999", save: "25% off", badge: "Portable", image: "assets/speaker.png" },
-  { name: "Hifi Setup & Display Unit", category: "audio", type: "Furniture", originalPrice: "₹12,000", price: "₹8,999", save: "25% off", badge: "", image: "assets/tv_unit.png" },
-  { name: "Cinematic Recliner", category: "audio", type: "Furniture", originalPrice: "₹30,000", price: "₹24,499", save: "18% off", badge: "Comfort", image: "assets/recliner.png" }
+  { name: "TV Collection", category: "electronics-main", type: "Collection", originalPrice: "Explore All", price: "Premium Series", save: "Latest Models", badge: "Folder", image: "assets/tv.png" }
 ];
 
 const prodGrid = document.getElementById('products-catalog');
@@ -139,22 +92,46 @@ function enquireProduct(type, name, price) {
   window.location.href = '#contact';
 }
 
-function renderProducts(categoryId, categoryName) {
+let currentCategory = 'furniture-main';
+let currentCategoryName = 'Furniture';
+let searchQuery = '';
+let typeFilter = 'All';
+
+function renderProducts() {
   if (!prodGrid) return;
   prodGrid.style.opacity = '0';
   prodGrid.style.transform = 'translateY(10px)';
   
   setTimeout(() => {
-    const filtered = catalogData.filter(p => p.category === categoryId);
+    if (currentCategory === 'furniture-main') {
+      filtered = catalogData.filter(p => p.type === 'Furniture' || p.category === 'furniture-main');
+    } else if (currentCategory === 'electronics-main') {
+      filtered = catalogData.filter(p => p.type === 'Electronics' || p.category === 'electronics-main');
+    } else {
+      filtered = catalogData.filter(p => p.category === currentCategory);
+    }
+    
+    if (searchQuery) {
+      filtered = filtered.filter(p => 
+        p.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
+        p.type.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+    }
+    
+    if (typeFilter !== 'All') {
+      filtered = filtered.filter(p => p.type === typeFilter);
+    }
+
     let html = '';
     
     if (filtered.length === 0) {
-      html = `<div style="grid-column: 1/-1; padding: 4rem; text-align: center; color: var(--muted);">More ${categoryName} products coming soon!</div>`;
+      const msg = searchQuery ? 'No products found matching your search.' : `More ${currentCategoryName} products coming soon!`;
+      html = `<div style="grid-column: 1/-1; padding: 4rem; text-align: center; color: var(--muted);">${msg}</div>`;
     } else {
       filtered.forEach(p => {
         const badgeHtml = p.badge ? `<span class="prod-badge">${p.badge}</span>` : '';
         html += `
-        <div class="prod-card">
+        <div class="prod-card" onclick="openQuickView('${p.name.replace(/'/g, "\\'")}')">
           <div class="prod-img"><img src="${p.image}" alt="${p.name}"/>${badgeHtml}</div>
           <div class="prod-info">
             <div class="prod-cat">${p.type}</div>
@@ -164,33 +141,184 @@ function renderProducts(categoryId, categoryName) {
               <span class="prod-original">${p.originalPrice}</span>
               <span class="prod-save">${p.save}</span>
             </div>
-            <button class="prod-btn" onclick="enquireProduct('${p.type}', '${p.name}', '${p.price}')">Enquire Now →</button>
+            <button class="prod-btn" onclick="event.stopPropagation(); enquireProduct('${p.type}', '${p.name}', '${p.price}')">Enquire Now →</button>
           </div>
         </div>`;
       });
     }
     
     prodGrid.innerHTML = html;
-    if(catalogTitle) catalogTitle.innerText = `${categoryName} Collection`;
     
     prodGrid.style.opacity = '1';
     prodGrid.style.transform = 'translateY(0)';
   }, 300);
 }
 
+// Category selection
 if (catCards.length > 0) {
-  renderProducts('living-room', 'Living Room');
+  renderProducts();
   
   catCards.forEach(card => {
     card.addEventListener('click', () => {
       catCards.forEach(c => c.classList.remove('active'));
       card.classList.add('active');
       
-      const catId = card.getAttribute('data-category');
-      const catName = card.querySelector('h3').innerText;
+      currentCategory = card.getAttribute('data-category');
+      currentCategoryName = card.querySelector('h3').innerText;
       
-      renderProducts(catId, catName);
+      renderProducts();
       document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
     });
   });
+}
+
+// Search Input
+const searchInput = document.getElementById('productSearch');
+if (searchInput) {
+  searchInput.addEventListener('input', (e) => {
+    searchQuery = e.target.value;
+    renderProducts();
+  });
+}
+
+// Type Filter Chips
+const filterChips = document.querySelectorAll('.filter-chip');
+filterChips.forEach(chip => {
+  chip.addEventListener('click', () => {
+    filterChips.forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    typeFilter = chip.getAttribute('data-type');
+    renderProducts();
+  });
+});
+
+// EMI Calculator Logic
+const emiAmount = document.getElementById('emiAmount');
+const emiAmountVal = document.getElementById('emiAmountVal');
+const monthlyEMI = document.getElementById('monthlyEMI');
+const tenureBtns = document.querySelectorAll('.tenure-btn');
+let currentTenure = 12;
+
+function calculateEMI() {
+  const p = parseFloat(emiAmount.value);
+  const r = 12 / (12 * 100); // 12% p.a. interest
+  const n = currentTenure;
+  
+  // EMI Formula: [P x R x (1+R)^N]/[(1+R)^N-1]
+  const emi = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+  
+  emiAmountVal.innerText = `₹${p.toLocaleString('en-IN')}`;
+  monthlyEMI.innerText = `₹${Math.round(emi).toLocaleString('en-IN')}`;
+}
+
+if (emiAmount) {
+  emiAmount.addEventListener('input', calculateEMI);
+  tenureBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tenureBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentTenure = parseInt(btn.getAttribute('data-months'));
+      calculateEMI();
+    });
+  });
+  calculateEMI(); // Initial calculation
+}
+
+// Map Tab Switching
+const mapTabs = document.querySelectorAll('.map-tab');
+const mapFrame = document.getElementById('mapFrame');
+if (mapTabs.length > 0 && mapFrame) {
+  mapTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      mapTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const mapUrl = tab.getAttribute('data-map');
+      mapFrame.src = mapUrl;
+    });
+  });
+}
+
+// WhatsApp Enquiry Submission
+const submitBtn = document.getElementById('submitEnquiry');
+if (submitBtn) {
+  submitBtn.addEventListener('click', () => {
+    const name = document.getElementById('userName').value.trim();
+    const phone = document.getElementById('userPhone').value.trim();
+    const type = document.getElementById('enquiryType').value;
+    const message = document.getElementById('enquiryMessage').value.trim();
+
+    if (!name || !phone) {
+      alert('Please enter your name and phone number.');
+      return;
+    }
+
+    const whatsappNumber = '9842298464';
+    const text = `*New Enquiry from AVM Enterprises Website*%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Interested In:* ${type}%0A*Message:* ${message}`;
+    
+    const whatsappURL = `https://wa.me/91${whatsappNumber}?text=${text}`;
+    window.open(whatsappURL, '_blank');
+  });
+}
+
+// Quick View Modal Logic
+function openQuickView(name) {
+  const p = catalogData.find(item => item.name === name);
+  if (!p) return;
+  
+  if (p.type === 'Collection') {
+    window.location.href = 'tv-collection.html';
+    return;
+  }
+  
+  const modal = document.getElementById('quickViewModal');
+  const img = document.getElementById('qvImg');
+  const title = document.getElementById('qvTitle');
+  const cat = document.getElementById('qvCat');
+  const price = document.getElementById('qvPrice');
+  const original = document.getElementById('qvOriginal');
+  const save = document.getElementById('qvSave');
+  const specsList = document.getElementById('qvSpecsList');
+  const enquireBtn = document.getElementById('qvEnquireBtn');
+  const waBtn = document.getElementById('qvWhatsappBtn');
+  
+  if (!modal || !img || !title) return;
+
+  img.src = p.image;
+  title.innerText = p.name;
+  cat.innerText = p.type;
+  price.innerText = p.price;
+  original.innerText = p.originalPrice;
+  save.innerText = p.save;
+  
+  // Dynamic Specs based on type/category
+  let specs = [];
+  if (p.type === 'Electronics') {
+    specs = ["High Efficiency", "1-Year Warranty", "Energy Saver", "Latest Model"];
+  } else {
+    specs = ["Solid Wood", "Premium Finish", "Ergonomic Design", "Durable Build"];
+  }
+  
+  specsList.innerHTML = specs.map(s => `<li>${s}</li>`).join('');
+  
+  enquireBtn.onclick = () => {
+    modal.classList.remove('active');
+    enquireProduct(p.type, p.name, p.price);
+  };
+  
+  waBtn.onclick = () => {
+    const msg = encodeURIComponent(`Hi AVM Enterprises, I'm interested in the ${p.name} (${p.price}). Please share more details.`);
+    window.open(`https://wa.me/919842298464?text=${msg}`, '_blank');
+  };
+  
+  modal.classList.add('active');
+}
+
+const closeQV = document.getElementById('closeQuickView');
+const qvModal = document.getElementById('quickViewModal');
+
+if (closeQV && qvModal) {
+  closeQV.onclick = () => qvModal.classList.remove('active');
+  qvModal.onclick = (e) => {
+    if (e.target === qvModal) qvModal.classList.remove('active');
+  };
 }
