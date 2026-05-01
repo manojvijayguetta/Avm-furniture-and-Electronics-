@@ -1,8 +1,7 @@
-<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="36" height="36" rx="8" fill="#142948"/>
-  <rect x="0.5" y="0.5" width="35" height="35" rx="7.5" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.6"/>
-  <path d="M5 26 L10.5 11 L16 26" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <line x1="6.8" y1="21" x2="14.2" y2="21" stroke="#D4AF37" stroke-width="1.4" stroke-linecap="round"/>
-  <path d="M18 11 L22.5 23 L27 11" stroke="#00D2D3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <path d="M29 26 L29 11 L32.5 20 L36 11 L36 26" stroke="#F0F4F8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" rx="8" fill="#0B1E38"/>
+  <!-- Simplified Fluid 'A' path inspired by Option 6 -->
+  <path d="M8 22 C8 22 12 8 16 8 C20 8 24 22 24 22 M10 18 L22 18" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Subtle Turquoise accent line -->
+  <path d="M14 24 Q16 26 18 24" stroke="#00D2D3" stroke-width="1.5" stroke-linecap="round"/>
 </svg>
